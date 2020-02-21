@@ -1,0 +1,438 @@
+{
+  "@context" : {
+    "actsUpon" : {
+      "@id" : "https://saref.etsi.org/core/actsUpon",
+      "@type" : "@id"
+    },
+    "Switch" : {
+      "@id" : "https://saref.etsi.org/core/Switch"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://saref.etsi.org/core/hasManufacturer"
+    },
+    "hasPrice" : {
+      "@id" : "https://saref.etsi.org/core/hasPrice",
+      "@type" : "@id"
+    },
+    "NotifyCommand" : {
+      "@id" : "https://saref.etsi.org/core/NotifyCommand"
+    },
+    "Meter" : {
+      "@id" : "https://saref.etsi.org/core/Meter"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+      "@type" : "@id"
+    },
+    "EnergyUnit" : {
+      "@id" : "https://saref.etsi.org/core/EnergyUnit"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Commodity" : {
+      "@id" : "https://saref.etsi.org/core/Commodity"
+    },
+    "Humidity" : {
+      "@id" : "https://saref.etsi.org/core/Humidity"
+    },
+    "hasModel" : {
+      "@id" : "https://saref.etsi.org/core/hasModel"
+    },
+    "SmokeSensor" : {
+      "@id" : "https://saref.etsi.org/core/SmokeSensor"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MeteringFunction" : {
+      "@id" : "https://saref.etsi.org/core/MeteringFunction"
+    },
+    "hasThresholdMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasThresholdMeasurement",
+      "@type" : "@id"
+    },
+    "accomplishes" : {
+      "@id" : "https://saref.etsi.org/core/accomplishes",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "CloseCommand" : {
+      "@id" : "https://saref.etsi.org/core/CloseCommand"
+    },
+    "OffState" : {
+      "@id" : "https://saref.etsi.org/core/OffState"
+    },
+    "isOfferedBy" : {
+      "@id" : "https://saref.etsi.org/core/isOfferedBy",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core/measuresProperty",
+      "@type" : "@id"
+    },
+    "PressureUnit" : {
+      "@id" : "https://saref.etsi.org/core/PressureUnit"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core/hasValue"
+    },
+    "Motion" : {
+      "@id" : "https://saref.etsi.org/core/Motion"
+    },
+    "hasMeterReadingType" : {
+      "@id" : "https://saref.etsi.org/core/hasMeterReadingType",
+      "@type" : "@id"
+    },
+    "Appliance" : {
+      "@id" : "https://saref.etsi.org/core/Appliance"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "GetMeterDataCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetMeterDataCommand"
+    },
+    "OnCommand" : {
+      "@id" : "https://saref.etsi.org/core/OnCommand"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core/Measurement"
+    },
+    "StepUpCommand" : {
+      "@id" : "https://saref.etsi.org/core/StepUpCommand"
+    },
+    "OnState" : {
+      "@id" : "https://saref.etsi.org/core/OnState"
+    },
+    "hasCommand" : {
+      "@id" : "https://saref.etsi.org/core/hasCommand",
+      "@type" : "@id"
+    },
+    "Gas" : {
+      "@id" : "https://saref.etsi.org/core/Gas"
+    },
+    "Light" : {
+      "@id" : "https://saref.etsi.org/core/Light"
+    },
+    "Temperature" : {
+      "@id" : "https://saref.etsi.org/core/Temperature"
+    },
+    "SetLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetLevelCommand"
+    },
+    "isAccomplishedBy" : {
+      "@id" : "https://saref.etsi.org/core/isAccomplishedBy",
+      "@type" : "@id"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core/hasProperty",
+      "@type" : "@id"
+    },
+    "PowerUnit" : {
+      "@id" : "https://saref.etsi.org/core/PowerUnit"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+      "@type" : "@id"
+    },
+    "Price" : {
+      "@id" : "https://saref.etsi.org/core/Price"
+    },
+    "LevelControlFunction" : {
+      "@id" : "https://saref.etsi.org/core/LevelControlFunction"
+    },
+    "OpenCommand" : {
+      "@id" : "https://saref.etsi.org/core/OpenCommand"
+    },
+    "HVAC" : {
+      "@id" : "https://saref.etsi.org/core/HVAC"
+    },
+    "GetSensingDataCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetSensingDataCommand"
+    },
+    "Energy" : {
+      "@id" : "https://saref.etsi.org/core/Energy"
+    },
+    "OnOffState" : {
+      "@id" : "https://saref.etsi.org/core/OnOffState"
+    },
+    "Water" : {
+      "@id" : "https://saref.etsi.org/core/Water"
+    },
+    "GetCurrentMeterValueCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetCurrentMeterValueCommand"
+    },
+    "Electricity" : {
+      "@id" : "https://saref.etsi.org/core/Electricity"
+    },
+    "StartState" : {
+      "@id" : "https://saref.etsi.org/core/StartState"
+    },
+    "hasTime" : {
+      "@id" : "https://saref.etsi.org/core/hasTime",
+      "@type" : "@id"
+    },
+    "OpenCloseFunction" : {
+      "@id" : "https://saref.etsi.org/core/OpenCloseFunction"
+    },
+    "StepDownCommand" : {
+      "@id" : "https://saref.etsi.org/core/StepDownCommand"
+    },
+    "ActuatingFunction" : {
+      "@id" : "https://saref.etsi.org/core/ActuatingFunction"
+    },
+    "GetCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetCommand"
+    },
+    "CloseState" : {
+      "@id" : "https://saref.etsi.org/core/CloseState"
+    },
+    "StopState" : {
+      "@id" : "https://saref.etsi.org/core/StopState"
+    },
+    "Profile" : {
+      "@id" : "https://saref.etsi.org/core/Profile"
+    },
+    "isAbout" : {
+      "@id" : "https://saref.etsi.org/core/isAbout",
+      "@type" : "@id"
+    },
+    "Pressure" : {
+      "@id" : "https://saref.etsi.org/core/Pressure"
+    },
+    "isMeasurementOf" : {
+      "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+      "@type" : "@id"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "OpenCloseState" : {
+      "@id" : "https://saref.etsi.org/core/OpenCloseState"
+    },
+    "OffCommand" : {
+      "@id" : "https://saref.etsi.org/core/OffCommand"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasTypicalConsumption" : {
+      "@id" : "https://saref.etsi.org/core/hasTypicalConsumption",
+      "@type" : "@id"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/makesMeasurement",
+      "@type" : "@id"
+    },
+    "SensingFunction" : {
+      "@id" : "https://saref.etsi.org/core/SensingFunction"
+    },
+    "DoorSwitch" : {
+      "@id" : "https://saref.etsi.org/core/DoorSwitch"
+    },
+    "SetAbsoluteLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetAbsoluteLevelCommand"
+    },
+    "represents" : {
+      "@id" : "https://saref.etsi.org/core/represents",
+      "@type" : "@id"
+    },
+    "GetMeterHistoryCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetMeterHistoryCommand"
+    },
+    "StopCommand" : {
+      "@id" : "https://saref.etsi.org/core/StopCommand"
+    },
+    "StartStopState" : {
+      "@id" : "https://saref.etsi.org/core/StartStopState"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "hasFunction" : {
+      "@id" : "https://saref.etsi.org/core/hasFunction",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Command" : {
+      "@id" : "https://saref.etsi.org/core/Command"
+    },
+    "SwitchOnService" : {
+      "@id" : "https://saref.etsi.org/core/SwitchOnService"
+    },
+    "isUsedFor" : {
+      "@id" : "https://saref.etsi.org/core/isUsedFor",
+      "@type" : "@id"
+    },
+    "Occupancy" : {
+      "@id" : "https://saref.etsi.org/core/Occupancy"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+    },
+    "LightSwitch" : {
+      "@id" : "https://saref.etsi.org/core/LightSwitch"
+    },
+    "PauseCommand" : {
+      "@id" : "https://saref.etsi.org/core/PauseCommand"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "Coal" : {
+      "@id" : "https://saref.etsi.org/core/Coal"
+    },
+    "Smoke" : {
+      "@id" : "https://saref.etsi.org/core/Smoke"
+    },
+    "hasMeterReading" : {
+      "@id" : "https://saref.etsi.org/core/hasMeterReading",
+      "@type" : "@id"
+    },
+    "consistsOf" : {
+      "@id" : "https://saref.etsi.org/core/consistsOf",
+      "@type" : "@id"
+    },
+    "SetRelativeLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetRelativeLevelCommand"
+    },
+    "EventFunction" : {
+      "@id" : "https://saref.etsi.org/core/EventFunction"
+    },
+    "isCommandOf" : {
+      "@id" : "https://saref.etsi.org/core/isCommandOf",
+      "@type" : "@id"
+    },
+    "hasSensingRange" : {
+      "@id" : "https://saref.etsi.org/core/hasSensingRange",
+      "@type" : "@id"
+    },
+    "MultiLevelState" : {
+      "@id" : "https://saref.etsi.org/core/MultiLevelState"
+    },
+    "TemperatureUnit" : {
+      "@id" : "https://saref.etsi.org/core/TemperatureUnit"
+    },
+    "isPropertyOf" : {
+      "@id" : "https://saref.etsi.org/core/isPropertyOf",
+      "@type" : "@id"
+    },
+    "hasSensorType" : {
+      "@id" : "https://saref.etsi.org/core/hasSensorType",
+      "@type" : "@id"
+    },
+    "StartStopFunction" : {
+      "@id" : "https://saref.etsi.org/core/StartStopFunction"
+    },
+    "hasState" : {
+      "@id" : "https://saref.etsi.org/core/hasState",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "https://saref.etsi.org/core/State"
+    },
+    "hasProfile" : {
+      "@id" : "https://saref.etsi.org/core/hasProfile",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProperty",
+      "@type" : "@id"
+    },
+    "OnOffFunction" : {
+      "@id" : "https://saref.etsi.org/core/OnOffFunction"
+    },
+    "Function" : {
+      "@id" : "https://saref.etsi.org/core/Function"
+    },
+    "Actuator" : {
+      "@id" : "https://saref.etsi.org/core/Actuator"
+    },
+    "Currency" : {
+      "@id" : "https://saref.etsi.org/core/Currency"
+    },
+    "IlluminanceUnit" : {
+      "@id" : "https://saref.etsi.org/core/IlluminanceUnit"
+    },
+    "hasMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasMeasurement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://saref.etsi.org/core/Service"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core/controlsProperty",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "OpenState" : {
+      "@id" : "https://saref.etsi.org/core/OpenState"
+    },
+    "StartCommand" : {
+      "@id" : "https://saref.etsi.org/core/StartCommand"
+    },
+    "ToggleCommand" : {
+      "@id" : "https://saref.etsi.org/core/ToggleCommand"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/Device"
+    },
+    "hasDescription" : {
+      "@id" : "https://saref.etsi.org/core/hasDescription"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimestamp"
+    },
+    "Power" : {
+      "@id" : "https://saref.etsi.org/core/Power"
+    },
+    "Task" : {
+      "@id" : "https://saref.etsi.org/core/Task"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Time" : {
+      "@id" : "https://saref.etsi.org/core/Time"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "offers" : {
+      "@id" : "https://saref.etsi.org/core/offers",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://saref.etsi.org/core/Sensor"
+    }
+  }
+}
